@@ -1,0 +1,41 @@
+use myDB;
+
+// Update
+db.myCollection.find({name: 'Vincent'});
+db.myCollection.update({name: 'Vincent'},
+                       {$set: {name: 'Nerd', status: 'updated'},
+                       $inc: {score: -1}});
+db.myCollection.find();
+
+// Update first document by decrementing its score by 1
+db.myCollection.update({}, {$inc: {score: -1}});
+db.myCollection.find();
+
+// Update multiple
+db.myCollection.update({}, {$inc: {score: -1}}, {multi: true});
+db.myCollection.find();
+
+// Saving - Retreive, modify, write back to db
+var doc = db.myCollection.findOne({name: 'Nerd'});
+doc
+doc.score = 10;
+doc
+db.myColletion.save(doc);
+db.myCollection.find();
+
+// Remove document
+db.myCollection.find();
+db.myCollection.remove({name: 'Nerd'});
+db.myCollection.find();
+db.myCollection.remove({});
+db.myCollection.find();
+
+// Drop collections
+show collections
+db.myCollection.drop();
+show collections
+
+// Drop database
+show dbs
+db.dropDatabase();
+show dbs
