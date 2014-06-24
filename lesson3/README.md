@@ -1,0 +1,4 @@
+<h1>Lesson 3: Using MongoDB as the Data Store for Node.js Applications</h1>
+<p>
+Lesson 3 teaches you how to integrate the MongoDB database into your Node.js applications. In this lesson, you learn how to access a MongoDB server from your Node.js applications. You create some queries that retrieve documents from a collection. Then you learn how to limit the amount of data returned from the database. You also learn how to sort the documents returned. Next, you use the MongoDB aggregation pipeline to aggregate data before retrieving it from the server. Finally, you learn how to add, remove and update documents in a collection. 
+</p>

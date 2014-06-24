@@ -1,0 +1,4 @@
+<h1>Lesson 2: MongoDB Fundamentals</h1>
+<p>
+Lesson 2 introduces you to the MongoDB database. The purpose of this lesson is to teach you how to use the MongoDB shell to access and manage databases. You first learn how to access the MongoDB shell and execute commands. Then you learn how to use shell commands to create databases, collections and documents. Next, you learn how to view documents in a collection and then use shell commands to modify and delete them. You also learn how to implement user accounts and authentication to the MongoDB database. You then learn about indexes and how to manage them. Finally, you learn how to build a MongoDB script that can be executed from a console prompt to access and manipulate documents. This exercise is very important because it builds a database that will be used in Lesson 3. 
+</p>

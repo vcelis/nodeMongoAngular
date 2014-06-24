@@ -1,0 +1,4 @@
+<h1>Lesson 1: Node.js Fundamentals</h1>
+<p>
+Lesson 1 teaches the fundamentals of Node.js. The purpose of this lesson is to provide you with the basics of developing applications using the Node.js platform. The lesson first covers setting up a development environment that enables you to build Node.js, MongoDB and AngularJS applications. Next, you learn how to build Node.js applications and modules. You also learn how Node.js implements callbacks to provide a single threaded model for applications. Then you learn how to implement events in your Node.js applications. Finally, you learn how to use readable and writeable streams to stream data to and from files.
+</p>

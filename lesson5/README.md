@@ -1,0 +1,4 @@
+<h1>Lesson 5: AngularJS Framework Fundamentals</h1>
+<p>
+Lesson 5 introduces you to using the AngularJS platform to extend HTML and build client applications. The lesson begins by helping you create your first AngularJS application. Then you learn how to bind data from the model to HTML elements. You also learn how to build your own custom directives. Next, you learn how to use the built-in directives to extend HTML. You then learn how to use the AngularJS http service to communicate with the server via AJAX. Finally, you learn how to build your own custom services that can be re-used in your AngularJS applications. 
+</p>

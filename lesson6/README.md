@@ -1,0 +1,4 @@
+<h1>Lesson 6: Implementing the Full Node.js, MongoDB, and AngularJS Stack to Add User Authentication to a Web Site</h1>
+<p>
+Lesson 6 combines the concepts from all the previous lessons together to build a Node.js, MongoDB, and AngularJS solution that provides user accounts and authentication to a web site. In the first step, you build the application server, routes and views. Next, you add session support to the server to store authentication state between requests. Then you build the server-side component to store and retrieve user data in the MongoDB database. Finally, you implement the necessary AngularJS components to handle interaction with the server to update the user data.
+</p>
