@@ -1,0 +1,16 @@
+use myDB;
+
+db.myCollection.find();
+db.myCollection.insert({name: 'Vincent', score: 9});
+db.myCollection.find();
+
+db.myCollection.insert([
+    {name: 'Ted', score: 9},
+    {name: 'Fred', score: 10},
+    {name: 'Jim', score: 7}
+]);
+db.myCollection.find();
+
+db.breakfast.insert({name: 'bacon', style: 'crsip'});
+db.breakfast.insert({name: 'eggs', style: 'scrambled'});
+db.breakfast.find();

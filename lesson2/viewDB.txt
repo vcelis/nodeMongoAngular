@@ -1,0 +1,36 @@
+use myDB;
+
+// Query
+db.myCollection.findOne();
+db.myCollection.find();
+
+db.myCollection.find({score: 9});
+db.myCollection.find({score: {$lt: 10}});
+db.myCollection.find({score: {$in: [7, 10]}});
+db.myCollection.find({$and: [
+                            {score: {$lt: 10}},
+                            {score: {$gt: 7}}
+                           ]});
+
+// Cursors
+var cursor = db.myCollection.find();
+while(doc = cursors.next()) {
+  printjson(doc);
+}
+
+// Count and Limit Cursors
+cursor = db.myCollection.find();
+cursor.count();
+
+var cursor = db.myCollection.find();
+cursor.limit(2);
+
+var cursor = db.myCollection.find();
+cursor.next();
+cursor.next();
+
+// Fields - Limit result set - 1=include | 0=exclude
+db.myCollection.find({}, {name: 1});
+
+// Retreiving distinct field values
+db.myCollection.distinct('score');
