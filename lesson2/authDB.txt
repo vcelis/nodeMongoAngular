@@ -1,0 +1,16 @@
+// Create admin
+use admin
+db.createUser({user: 'admin', pwd: 'password', roles: ['readWriteAnyDatabase', 'dbAdminAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase']});
+
+// Create database users
+use test
+db.createUser({user: 'writer', pwd: 'password', roles: ['readWrite']});
+db.createuser({user: 'reader', pwd: 'password', roles: ['read']});
+
+// Restart mongo db after enabling auth in the settings - depends on host
+// Uncomment 'auth = true' in /etc/mongod.conf
+$ sudo service mongod restart
+
+// Authenticate
+use admin
+db.auth('admin', 'password');

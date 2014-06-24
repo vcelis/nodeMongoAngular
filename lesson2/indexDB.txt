@@ -1,0 +1,17 @@
+// Finetune indexes for faster performance
+use indexedDB
+
+db.cars.insert({vin: '', make: '', model: '', color: '', price: ''});
+db.cars.getIndexes();
+
+// Enable indexing on defined fields - make and model together act as key!
+db.cars.ensureIndex({make: 1, model: 1});
+db.cars.getIndexes();
+
+// Ensure uniqueness within a field
+db.cars.ensureIndex({vin: 1}, {unique: true});
+db.cars.getIndexes();
+
+// Drop an index
+db.cars.dropIndex({make: 1, model: 1});
+db.cars.getIndexes();
