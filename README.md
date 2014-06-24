@@ -6,7 +6,7 @@ Learning Node.js, MongoDB and AngularJS LiveLessons provides developers with a p
 In this video training, Brad Dayley starts by introducing the Node.js platform. He then introduces the NoSQL database MongoDB and describes how to configure and begin using it. The video then moves into incorporating high-performance MongoDB databases into server-side Node.js applications and scripts. Next, the Express web server module for Node.js is covered, giving you the understanding you need to easily build up your own scalable web servers. The video then describes how to build out client-side applications using the AngularJS JavaScript framework. The video wraps up with some complete end-to-end examples of using the Node.js, MongoDB and AngularJS framework. After watching this video, developers will understand why Node.js, MongoDB and Angular generate so much excitement in today's fast-paced environment. Viewers will be able to write fast, efficient and reliable applications and web servers. 
 </p>
 
-<h3>Table of Contents</h3>
+<h2>Table of Contents</h2>
 <p>
 <strong>Lesson 1: Node.js Fundamentals</strong><br/>
 1.1 Setup the Node.js development environment<br/>
