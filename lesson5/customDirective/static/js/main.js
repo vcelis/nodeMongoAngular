@@ -22,7 +22,7 @@ app.directive('richDraggable', function($document, $window){
     element.on('mousedown', function(event) {
       event.preventDefault();
       
-      startX = event.pageY - x;
+      startX = event.pageX - x;
       startY = event.pageY - y;
 
       $document.on('mousemove', mousemove);

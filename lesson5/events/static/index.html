@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <title>AngularJS Scope Events</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  </head>
+  <body>
+    <div ng-controller='CharactersController'>
+      <span ng-repeat='name in names' ng-click='changeName()'>
+        {{ name }}
+      </span>
+      <div ng-controller='CharacterController'>
+        <hr>
+        <label>Name: </label>{{ currentName }}<br>
+        <label>Race: </label>{{ currentInfo.race }}<br>
+        <label>Weapon: </label>{{ currentInfo.weapon }}<br>
+        <span ng-click="deleteChar()">Delete</span>
+      </div>
+    </div>
+    <script src='http://code.angularjs.org/1.2.9/angular.min.js'></script>
+    <script src='/js/main.js'></script>
+  </body>
+</html>
