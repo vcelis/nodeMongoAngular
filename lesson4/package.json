@@ -4,6 +4,11 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "*",
-    "ejs": "*"   
+    "mongodb": "*",
+    "ejs": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express-session": "*",
+    "connect-mongo": "*"
   }
 }
