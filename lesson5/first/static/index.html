@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS app</title>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <span>First:</span>
+      <input type="text" ng-model="first"><br>
+
+      <span>Last:</span>
+      <input type="text" ng-model="last"><br>
+
+      <button ng-click="updateMessage()">Message</button>
+      <hr>
+      {{ heading + message }}
+      <hr>
+      {{ first }} | {{ last }}
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

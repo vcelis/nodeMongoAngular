@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS Data Binding Directives</title>
+  </head>
+  <body>
+    <div>
+      <h2>Data Binding Directives</h2>
+      <div ng-controller="radioController">
+        <span ng-style="myStyle"></span>
+        <label ng-repeat="color in colors">
+          {{ color }}
+          <input type="radio" ng-model="myStyle['background-color']"
+                 ng-value="color" id="{{color}}" name="mColor">
+        </label>
+      </div>
+      <hr>
+
+      <div ng-controller="selectController">
+        <select ng-model="camera" 
+                ng-options="c.model group by c.make for c in cameras"></select>
+        {{camera|json}}
+      </div>
+      <hr>
+
+      <div ng-controller="eventsController">
+        <input type="text"
+               ng-blur="focusState='Blurred'"
+               ng-focus="focusState='Focused'"
+               ng-mouseenter="mouseState='Entered'"
+               ng-mouseleave="mouseState='Left'"
+               ng-mouseclick="mouseState='Clicked'"
+               ng-mousedown="mouseState='Down'"
+               ng-mouseup="mouseState='Up'"
+               ng-keyup="keyStroke($event)"
+               ng-click="mouseClick($event)"><br/>
+        Focus State: {{ focusState }}<br/>
+        Mouse State: {{ mouseState }}<br/>
+        Key Info: {{ keyInfo | json }}<br/>
+        Mouse Info: {{ mouseInfo | json }}
+      </div>
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
