@@ -29,10 +29,14 @@ angular.module('myApp', [])
     $scope.removeWord = function(deleteWord) {
       $http.post('http://localhost:3333/remove', {word: deleteWord})
         .success(function(data, status, headers, config) {
-
+          $scope.words = data;
+          $scope.status = data;
+          $scope.getWords();
         })
         .error(function(data, status, headers, config){
-
+          $scope.status = data;
         });
     };
+
+    $scope.getWords();
   }]);

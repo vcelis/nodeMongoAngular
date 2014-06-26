@@ -3,6 +3,7 @@
   "name": "lesson5",
   "version": "0.0.1",
   "dependencies": {
-    "express": "*"    
+    "express": "*",
+    "body-parser": "*"    
   }
 }
