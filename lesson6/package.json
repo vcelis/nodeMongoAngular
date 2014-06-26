@@ -1,0 +1,14 @@
+{
+  "author": "Vincent Celis",
+  "name": "lesson6",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express-session": "*",
+    "connect-mongo": "*",
+    "mongodb": "*"
+  }
+}

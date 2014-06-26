@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+  </head>
+  <body>
+    <div class="form-container">
+      <p class="form-header">User Profile</p>
+      <form method="POST" action="/user/update">>
+        <label>Username:</label>
+        <input type="text" name="username"><br>
+        <label>Email:</label>
+        <input type="email" name="email"><br>
+        <label>Favorite Color:</label>
+        <input type="text" name="color"><br>
+        <input type="submit" value="Save">
+      </form>
+    </div>
+    <form method="POST" action="/user/delete">
+      <input type="submit" value="Delete User">
+    </form>
+    <hr>
+    <%= msg %>
+  </body>
+</html>
