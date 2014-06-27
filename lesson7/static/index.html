@@ -7,8 +7,15 @@
     <div ng-controller='tableController'>
     <hr>
     <input type='button' value='Find Words' ng-click='find()'/>
+    <div id="queryOptions">
+      <label>Page Limit</label>
+      <input type="text" ng-model="limit"/><br>
+    </div>
     <hr>
     <div>
+      <input type="button" value="Prev" ng-click="prev()"/>
+      <input type="button" value="Next" ng-click="next()"/>
+      <label>Words {{skip+1}} to {{skipEnd}}</label>
       <hr>
       <table>
         <tr>
