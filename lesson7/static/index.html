@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <title>Dynamic Data</title>
+  </head>
+  <body>
+    <div ng-controller='tableController'>
+    <hr>
+    <input type='button' value='Find Words' ng-click='find()'/>
+    <hr>
+    <div>
+      <hr>
+      <table>
+        <tr>
+          <th>Word</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Length</th>
+          <th>Vowels</th>
+          <th>Consonants</th>
+        </tr>
+        <tr ng-repeat='word in words'>
+          <td>{{word.word}}</td>
+          <td>{{word.first}}</td>
+          <td>{{word.last}}</td>
+          <td>{{word.size}}</td>
+          <td>{{word.stats.vowels}}</td>
+          <td>{{word.stats.consonants}}</td>
+        </tr>
+      </table>
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "author": "Vincent Celis",
+  "name": "lesson7",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongodb": "*"
+  }
+}
