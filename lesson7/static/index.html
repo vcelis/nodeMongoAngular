@@ -10,6 +10,12 @@
     <div id="queryOptions">
       <label>Page Limit</label>
       <input type="text" ng-model="limit"/><br>
+      <label>Contains</label>
+      <input type="text" ng-model="contains"/><br>
+      <label>Sort By</label>
+      <select ng-model='sortField' ng-options='field for field in sortFields'></select>
+      <input type='radio' ng-model='direction' value='asc'>Ascending
+      <input type='radio' ng-model='direction' value='desc'>Descending
     </div>
     <hr>
     <div>
