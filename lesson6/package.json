@@ -9,6 +9,7 @@
     "cookie-parser": "*",
     "express-session": "*",
     "connect-mongo": "*",
-    "mongodb": "*"
+    "mongodb": "*",
+    "crypto": "*"
   }
 }

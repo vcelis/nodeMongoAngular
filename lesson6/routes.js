@@ -5,11 +5,6 @@ module.exports = function(app) {
     .use('/static', express.static('./static'))
     
     .get('/', function(req, res) {
-      // Temp user data
-      req.session.userID = 'test';
-      req.session.username = 'tester';
-      req.session.msg = 'Testing Sessions';
-
       // Session verify
       if (req.session.userID) {
         res.render('index', {msg: req.session.msg, 
@@ -42,4 +37,12 @@ module.exports = function(app) {
         res.redirect('/login');
       });
     });
+
+    // Routes to interact with users controller and database
+    var users = require('./usersController');
+    app.post('/signup', users.signup);
+    app.post('/user/update', users.updateUser);
+    app.post('/user/delete', users.deleteUser);
+    app.post('/login', users.login);
+    app.get('/user/profile', users.getUserProfile);
 };
